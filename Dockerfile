@@ -1,8 +1,10 @@
 FROM ubuntu:15.10
 
 # Build with
-#    docker build -t kelvinlawson/android-studio .
+#    docker build -t <your_name>/android-studio .
 #
+# Before using the following instructions, modify the sh scripts to reflect the
+# change in name above.
 # Run the first time with: "./android-save-state.sh" so that
 # it downloads, installs and saves installation packages inside
 # the container:
@@ -11,7 +13,7 @@ FROM ubuntu:15.10
 #  * Quit
 #  * Commit current container state as main image:
 #    docker ps -a
-#    docker commmit <id> kelvinlawson/android-studio
+#    docker commmit <id> <your_name>/android-studio
 #  * You can now run the ready-installed container using
 #    "android.sh".
 #
